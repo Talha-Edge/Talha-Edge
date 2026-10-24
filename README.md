@@ -9,7 +9,7 @@
 </a>
 
 <p align="center">
-  <a href="https://linkedin.com/in/talha-saleem-0167b636b" target="_blank">
+  <a href="https://www.linkedin.com/in/talha-saleem-0167b636b" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
   </a>
   &nbsp;
@@ -74,14 +74,14 @@ Computer Science undergraduate specializing in **AI/ML**, **Deep Learning**, and
   <img src="https://img.shields.io/badge/Jupyter-18181b?style=for-the-badge&logo=jupyter&logoColor=f37626&labelColor=09090b" alt="Jupyter"/>
 </p>
 
-#### ⚙️ Backend, Systems & Embedded Hardware
+#### 🔌 Embedded Systems & IoT Hardware
 <p>
-  <img src="https://img.shields.io/badge/Flask-18181b?style=for-the-badge&logo=flask&logoColor=ffffff&labelColor=09090b" alt="Flask"/>
-  <img src="https://img.shields.io/badge/C%2FC%2B%2B-18181b?style=for-the-badge&logo=cplusplus&logoColor=00599c&labelColor=09090b" alt="C++"/>
-  <img src="https://img.shields.io/badge/Docker-18181b?style=for-the-badge&logo=docker&logoColor=2496ed&labelColor=09090b" alt="Docker"/>
+  <img src="https://img.shields.io/badge/STM32_CubeIDE-18181b?style=for-the-badge&logo=stmicroelectronics&logoColor=03234b&labelColor=09090b" alt="STM32CubeIDE"/>
+  <img src="https://img.shields.io/badge/Zephyr_RTOS-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="Zephyr RTOS"/>
+  <img src="https://img.shields.io/badge/Nordic_BLE-18181b?style=for-the-badge&logo=bluetooth&logoColor=0082fc&labelColor=09090b" alt="Nordic BLE"/>
+  <img src="https://img.shields.io/badge/STM32_(UART_%7C_PWM_%7C_ADC)-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="STM32 Peripherals"/>
+  <img src="https://img.shields.io/badge/ST--Link_%26_J--Link-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="ST-Link / J-Link"/>
   <img src="https://img.shields.io/badge/Git_&_GitHub-18181b?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=09090b" alt="Git"/>
-  <img src="https://img.shields.io/badge/STM32_CubeIDE-18181b?style=for-the-badge&logo=stmicroelectronics&logoColor=03234b&labelColor=09090b" alt="STM32"/>
-  <img src="https://img.shields.io/badge/Zephyr_RTOS-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="Zephyr"/>
 </p>
 
 </div>
@@ -119,9 +119,9 @@ Computer Science undergraduate specializing in **AI/ML**, **Deep Learning**, and
       </ul>
       <p>
         <img src="https://img.shields.io/badge/Machine%20Learning-18181b?style=flat-square&logoColor=white&labelColor=09090b" />
-        <img src="https://img.shields.io/badge/Docker-18181b?style=flat-square&logo=docker&logoColor=white&labelColor=09090b" />
+        <img src="https://img.shields.io/badge/Anomaly%20Detection-18181b?style=flat-square&logoColor=white&labelColor=09090b" />
         <img src="https://img.shields.io/badge/Time--Series-18181b?style=flat-square&logoColor=white&labelColor=09090b" />
-        <img src="https://img.shields.io/badge/CI%2FCD-18181b?style=flat-square&logoColor=white&labelColor=09090b" />
+        <img src="https://img.shields.io/badge/Python-18181b?style=flat-square&logo=python&logoColor=white&labelColor=09090b" />
       </p>
     </td>
   </tr>
@@ -192,7 +192,7 @@ Computer Science undergraduate specializing in **AI/ML**, **Deep Learning**, and
 <p>I'm always open to discussing new AI/ML research collaborations, computer vision challenges, or systems engineering opportunities.</p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/talha-saleem-0167b636b" target="_blank">
+  <a href="https://www.linkedin.com/in/talha-saleem-0167b636b" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
