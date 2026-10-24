@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/talha-saleem-0167b636b" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-talha--saleem--0167b636b-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:talhasaleem1534@gmail.com">
@@ -18,7 +18,7 @@
   </a>
   &nbsp;
   <a href="https://github.com/talhasaleem1534-crypto">
-    <img src="https://img.shields.io/badge/GitHub-Profile-18181b?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=09090b" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-Talha_Saleem-18181b?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=09090b" alt="GitHub" />
   </a>
   &nbsp;
   <img src="https://img.shields.io/badge/Location-Sargodha%2C%20Pakistan-18181b?style=for-the-badge&logo=googlemaps&logoColor=a1a1aa&labelColor=09090b" alt="Location" />
@@ -35,6 +35,10 @@ identity:
   name: Talha Saleem
   education: BS Computer Science (Batch 2023–2027) | University of Sargodha
   core_focus: Artificial Intelligence, Deep Learning & Computer Vision
+  contact:
+    linkedin: "https://www.linkedin.com/in/talha-saleem-0167b636b"
+    email: "talhasaleem1534@gmail.com"
+    location: "Sargodha, Pakistan"
   architectural_mindset: "Bridging mathematical ML modeling with production software engineering."
 ```
 
@@ -165,8 +169,8 @@ Computer Science undergraduate specializing in **AI/ML**, **Deep Learning**, and
 <div align="center">
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=talhasaleem1534-crypto&show_icons=true&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&icon_color=e4e4e7&border_color=27272a&border_radius=8&hide_border=false" width="48%" alt="Talha's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=talhasaleem1534-crypto&layout=compact&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&border_color=27272a&border_radius=8&hide_border=false" width="48%" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=talhasaleem1534-crypto&custom_title=Talha%20Saleem's%20GitHub%20Stats&show_icons=true&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&icon_color=e4e4e7&border_color=27272a&border_radius=8&hide_border=false" width="48%" alt="Talha's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=talhasaleem1534-crypto&custom_title=Most%20Used%20Languages&layout=compact&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&border_color=27272a&border_radius=8&hide_border=false" width="48%" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -193,7 +197,7 @@ Computer Science undergraduate specializing in **AI/ML**, **Deep Learning**, and
 
 <p align="center">
   <a href="https://www.linkedin.com/in/talha-saleem-0167b636b" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-talha--saleem--0167b636b-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
   <a href="mailto:talhasaleem1534@gmail.com">
