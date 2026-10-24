@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talha Saleem - GitHub Profile Overview Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: #111114;
+      --border: #27272a;
+      --text: #e4e4e7;
+      --text-muted: #a1a1aa;
+      --accent: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 880px;
+      width: 100%;
+      background: #0d0e12;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 100px rgba(255, 255, 255, 0.02);
+    }
+
+    .preview-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .user-pill {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .user-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid #3f3f46;
+      background: #18181b;
+    }
+
+    .user-meta h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .user-meta p {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .status-tag {
+      background: #18181b;
+      border: 1px solid #27272a;
+      color: #22c55e;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #a1a1aa;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 18px 0 10px 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    p strong {
+      color: #ffffff;
+    }
+
+    pre {
+      background: #09090b;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #a1a1aa;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    pre code {
+      color: #e4e4e7;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 12px;
+      margin: 20px 0;
+    }
+
+    td {
+      background: #111115;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      vertical-align: top;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    td:hover {
+      border-color: #52525b;
+      transform: translateY(-2px);
+    }
+
+    td h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    td h3 a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    td p {
+      font-size: 13.5px;
+      color: #a1a1aa;
+      margin-bottom: 12px;
+    }
+
+    td ul {
+      padding-left: 18px;
+      margin-bottom: 14px;
+      color: #a1a1aa;
+      font-size: 13px;
+    }
+
+    td ul li {
+      margin-bottom: 6px;
+    }
+
+    td ul li b {
+      color: #e4e4e7;
+    }
+
+    .badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin: 24px 0;
+    }
+
+    .stats-grid img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .banner-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+
+    .typing-box {
+      margin: 14px 0 20px 0;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="preview-header-bar">
+      <div class="user-pill">
+        <img class="user-avatar" src="https://avatars.githubusercontent.com/u/240168518?v=4" alt="Avatar">
+        <div class="user-meta">
+          <h2>Talha Saleem</h2>
+          <p>talhasaleem1534-crypto / README.md</p>
+        </div>
+      </div>
+      <div class="status-tag">✦ MATTE BLACK OVERVIEW PREVIEW</div>
+    </div>
+
+    <!-- Banner -->
+    <div class="center">
+      <img class="banner-img" src="https://capsule-render.vercel.app/api?type=rect&color=0:09090b,100:141416&height=210&section=header&text=Talha%20Saleem&fontSize=48&fontColor=ffffff&fontAlignY=42&desc=AI%20%2F%20Machine%20Learning%20Engineer%20%E2%80%A2%20Computer%20Vision%20%E2%80%A2%20Systems&descSize=16&descAlignY=66&descColor=a1a1aa" alt="Talha Saleem Banner">
+
+      <div class="typing-box">
+        <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=1000&color=E4E4E7&center=true&vCenter=true&width=680&lines=AI+%2F+Machine+Learning+Engineer+%26+Computer+Vision;BS+Computer+Science+%40+University+of+Sargodha;Deepfake+Forensics+•+CNNs+•+TensorFlow+%26+OpenCV;Building+Intelligent+Platforms+%26+Systems-Level+Software" alt="Typing SVG" />
+      </div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/talha-saleem-0167b636b" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
+        </a>
+        <a href="mailto:talhasaleem1534@gmail.com">
+          <img src="https://img.shields.io/badge/Email-talhasaleem1534%40gmail.com-18181b?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=09090b" alt="Email" />
+        </a>
+        <a href="https://github.com/talhasaleem1534-crypto">
+          <img src="https://img.shields.io/badge/GitHub-Profile-18181b?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=09090b" alt="GitHub" />
+        </a>
+        <img src="https://img.shields.io/badge/Location-Sargodha%2C%20Pakistan-18181b?style=for-the-badge&logo=googlemaps&logoColor=a1a1aa&labelColor=09090b" alt="Location" />
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>✦ Executive Summary</h3>
+    <pre><code>identity:
+  name: Talha Saleem
+  education: BS Computer Science (Batch 2023–2027) | University of Sargodha
+  core_focus: Artificial Intelligence, Deep Learning &amp; Computer Vision
+  architectural_mindset: "Bridging mathematical ML modeling with production software engineering."</code></pre>
+
+    <p>Computer Science undergraduate specializing in <strong>AI/ML</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong>. Proven track record developing custom CNN forensic architectures (achieving 70% classification accuracy on a 10,000-image deepfake dataset), leading the AI/ML track for an automated cloud deployment platform, and architecting systems-level software in pure Python. Experienced across the full machine learning lifecycle—from raw data harvesting and feature extraction to training, evaluation, and containerized deployment.</p>
+
+    <hr>
+
+    <h3>🛠️ Technical Arsenal</h3>
+    <div class="center">
+      <h4>🧠 Artificial Intelligence &amp; Deep Learning</h4>
+      <p>
+        <img src="https://img.shields.io/badge/TensorFlow-18181b?style=for-the-badge&logo=tensorflow&logoColor=ff6f00&labelColor=09090b" alt="TensorFlow"/>
+        <img src="https://img.shields.io/badge/Keras-18181b?style=for-the-badge&logo=keras&logoColor=d00000&labelColor=09090b" alt="Keras"/>
+        <img src="https://img.shields.io/badge/Scikit--Learn-18181b?style=for-the-badge&logo=scikitlearn&logoColor=f7931e&labelColor=09090b" alt="Scikit-Learn"/>
+        <img src="https://img.shields.io/badge/CNN_Architectures-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="CNN"/>
+        <img src="https://img.shields.io/badge/Model_Evaluation-18181b?style=for-the-badge&logoColor=38bdf8&labelColor=09090b" alt="Evaluation"/>
+      </p>
+
+      <h4>👁️ Computer Vision &amp; Digital Forensics</h4>
+      <p>
+        <img src="https://img.shields.io/badge/OpenCV-18181b?style=for-the-badge&logo=opencv&logoColor=5c8cee&labelColor=09090b" alt="OpenCV"/>
+        <img src="https://img.shields.io/badge/Haar_Cascades-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="Haar Cascades"/>
+        <img src="https://img.shields.io/badge/Canny_Edge_Detection-18181b?style=for-the-badge&logoColor=a1a1aa&labelColor=09090b" alt="Canny Edge"/>
+        <img src="https://img.shields.io/badge/Laplacian_Variance-18181b?style=for-the-badge&logoColor=e4e4e7&labelColor=09090b" alt="Laplacian"/>
+        <img src="https://img.shields.io/badge/Real--Time_Video_Streams-18181b?style=for-the-badge&logoColor=22c55e&labelColor=09090b" alt="Video Streams"/>
+      </p>
+
+      <h4>📊 Data Science, Analytics &amp; Visualization</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Python_3.x-18181b?style=for-the-badge&logo=python&logoColor=3776ab&labelColor=09090b" alt="Python"/>
+        <img src="https://img.shields.io/badge/NumPy-18181b?style=for-the-badge&logo=numpy&logoColor=013243&labelColor=09090b" alt="NumPy"/>
+        <img src="https://img.shields.io/badge/Pandas-18181b?style=for-the-badge&logo=pandas&logoColor=150458&labelColor=09090b" alt="Pandas"/>
+        <img src="https://img.shields.io/badge/Matplotlib-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="Matplotlib"/>
+        <img src="https://img.shields.io/badge/Seaborn-18181b?style=for-the-badge&logoColor=4c8cb5&labelColor=09090b" alt="Seaborn"/>
+        <img src="https://img.shields.io/badge/Jupyter-18181b?style=for-the-badge&logo=jupyter&logoColor=f37626&labelColor=09090b" alt="Jupyter"/>
+      </p>
+
+      <h4>⚙️ Backend, Systems &amp; Hardware</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Flask-18181b?style=for-the-badge&logo=flask&logoColor=ffffff&labelColor=09090b" alt="Flask"/>
+        <img src="https://img.shields.io/badge/C%2FC%2B%2B-18181b?style=for-the-badge&logo=cplusplus&logoColor=00599c&labelColor=09090b" alt="C++"/>
+        <img src="https://img.shields.io/badge/Docker-18181b?style=for-the-badge&logo=docker&logoColor=2496ed&labelColor=09090b" alt="Docker"/>
+        <img src="https://img.shields.io/badge/Git_&_GitHub-18181b?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=09090b" alt="Git"/>
+        <img src="https://img.shields.io/badge/STM32_CubeIDE-18181b?style=for-the-badge&logo=stmicroelectronics&logoColor=03234b&labelColor=09090b" alt="STM32"/>
+        <img src="https://img.shields.io/badge/Zephyr_RTOS-18181b?style=for-the-badge&logoColor=ffffff&labelColor=09090b" alt="Zephyr"/>
+      </p>
+    </div>
+
+    <hr>
+
+    <h3>💼 Featured Engineering Projects</h3>
+    <table>
+      <tr>
+        <td width="50%">
+          <h3>01 / <a href="https://github.com/talhasaleem1534-crypto">Deepfake Detection System</a></h3>
+          <p><b>AI-Powered Video Forensics & Face Authenticity Classifier</b></p>
+          <ul>
+            <li>Trained a custom <b>CNN in TensorFlow/Keras</b> achieving <b>70% accuracy</b> across a 10,000-image Kaggle dataset.</li>
+            <li>Built an automated video face-harvesting pipeline utilizing <b>OpenCV Haar Cascades</b> with sliding-window localization.</li>
+            <li>Extracted deep forensic indicators using <b>RGB channel splitting, Canny edge detection</b>, and <b>Laplacian variance</b>.</li>
+            <li>Wrapped into an interactive <b>Flask web application</b> delivering real-time frame-by-frame classifications.</li>
+          </ul>
+        </td>
+        <td width="50%">
+          <h3>02 / <a href="https://github.com/salman2565dev/FYP">Automated Cloud Deployment Platform (FYP)</a></h3>
+          <p><b>AI/ML Lead • Intelligent Private Cloud &amp; Server Orchestration</b></p>
+          <ul>
+            <li>Leading the <b>AI/ML Track</b> for a Final Year Project building an autonomous server deployment and monitoring system.</li>
+            <li>Engineered <b>predictive time-series forecasting models</b> for proactive cloud traffic auto-scaling under fluctuating workloads.</li>
+            <li>Implemented <b>anomaly detection algorithms</b> analyzing file-system behavioral telemetry for real-time ransomware interception.</li>
+            <li>Integrated AI models with containerized <b>Docker</b> environments and automated CI/CD pipeline triggers.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%">
+          <h3>03 / <a href="https://github.com/talhasaleem1534-crypto/lvcs">LVCS — Lightweight Version Control</a></h3>
+          <p><b>Systems Programming • Built in Pure Python</b></p>
+          <ul>
+            <li>Engineered a fully functional, Git-inspired distributed version control system from first principles with zero external dependencies.</li>
+            <li>Implemented cryptographic object hashing, DAG commit trees, directory snapshot staging, and branch pointers.</li>
+            <li>Designed a responsive CLI interface replicating core VCS primitives (<code>init</code>, <code>add</code>, <code>commit</code>, <code>log</code>, <code>checkout</code>).</li>
+          </ul>
+        </td>
+        <td width="50%">
+          <h3>04 / <a href="https://github.com/talhasaleem1534-crypto">Machine Learning Engineering Portfolio</a></h3>
+          <p><b>CampusX 100 Days of ML • 6+ Production-Grade Pipelines</b></p>
+          <ul>
+            <li>Developed 6+ end-to-end predictive pipelines across diverse Kaggle benchmarks spanning classification, regression, and clustering.</li>
+            <li>Applied disciplined data preparation: StandardScaler, RobustScaler, and One-Hot Encoding in Scikit-Learn.</li>
+            <li>Conducted rigorous statistical validation: Confusion Matrices, Precision-Recall curves, ROC-AUC, and Cross-Validation.</li>
+            <li>Generated publication-grade analytical dashboards using Matplotlib and Seaborn for stakeholders.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h3>📊 GitHub Activity &amp; Analytics</h3>
+    <div class="center">
+      <div class="stats-grid">
+        <img src="https://github-readme-stats.vercel.app/api?username=talhasaleem1534-crypto&show_icons=true&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&icon_color=e4e4e7&border_color=27272a&border_radius=8&hide_border=false" alt="Talha's GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=talhasaleem1534-crypto&layout=compact&theme=dark&bg_color=09090b&title_color=ffffff&text_color=a1a1aa&border_color=27272a&border_radius=8&hide_border=false" alt="Top Languages" />
+      </div>
+      <img style="width: 100%; border-radius: 10px;" src="https://github-readme-streak-stats.herokuapp.com/?user=talhasaleem1534-crypto&theme=dark&background=09090b&border=27272a&stroke=27272a&ring=ffffff&fire=f43f5e&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=a1a1aa&sideLabels=a1a1aa&dates=71717a&border_radius=8" alt="Streak Stats" />
+    </div>
+
+    <hr>
+
+    <div class="center">
+      <h3>📬 Get In Touch</h3>
+      <p>I'm always open to discussing new AI/ML research collaborations, computer vision challenges, or systems engineering opportunities.</p>
+      <div class="social-links" style="margin-top: 16px;">
+        <a href="https://linkedin.com/in/talha-saleem-0167b636b" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Talha_Saleem-18181b?style=for-the-badge&logo=linkedin&logoColor=0a66c2&labelColor=09090b" alt="LinkedIn" />
+        </a>
+        <a href="mailto:talhasaleem1534@gmail.com">
+          <img src="https://img.shields.io/badge/Email-talhasaleem1534%40gmail.com-18181b?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=09090b" alt="Email" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
